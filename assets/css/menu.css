@@ -1,0 +1,11 @@
+.menu{
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.menu-spacing{
+    height: 20rem;
+}
