@@ -6,16 +6,39 @@
 }
 
 .white-bg{
-
     background: var(--white-color);
 }
 
 .main-content{
-    max-width: 1200px;
+    max-width: 102.4rem;
     margin: 0 auto;
     padding: var(--gap) ;
 }
 
 .section{
     min-height: 100vh;
+    padding: 10rem 0;
+}
+.section div{
+    margin-bottom: 2rem;
+}
+
+#button{
+    color: white;
+    margin: 10px 0;
+    background: var(--color-3);
+    
+    border: 0;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    
+  }
+
+#button:hover {
+    transition: all 0.5s linear;
+    background-color: var(--color-4);
+    cursor: pointer;
+
 }

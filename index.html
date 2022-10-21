@@ -8,11 +8,11 @@
     <title>Landing Page Empresa</title>
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/classes.css">
-    <link rel="stylesheet" href="assets/css/elements.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,40 +24,72 @@
 </head>
 
 <body>
-    <aside class="menu ">
-        <section class="main-content menu-content">
-            <h1>
-                <a href="#home">LOGO</a>
-            </h1>
+    <aside class="menu main-bg">
+        <div  class="main-content menu-content">
+            <span>
+                <a href="#page-top"><img src="/assets/img/softeam.png" alt=""></a>
+            </span>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#page-top">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#downloads">Downloads</a></li>
+                    <li><a href="#midia">Midia</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
-    <div class="menu-spacing">
-
-    </div>
-
-    <section id="home" class="main-bg section">
+    
+    <!-- <div class="menu-spacing"></div> -->
+    
+    <section id="page-top" class="page-top section">
         <div class="main-content">
-            <h1>Lorem</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, excepturi quasi facilis, optio deserunt
-                omnis earum adipisci molestias natus doloribus aliquam delectus? Eligendi sit, odio accusantium sed at
-                voluptate vitae.</p>
+            <h1><img src="assets/img/softeam.png" alt="logo SOFTEAM"></h1>
+            <h3>Empresa Junior de Computação</h3>
+            <h4>UFS</h4>
+        </div>
+    </section>
+
+    <section id="sobre" class="main-bg section">
+        <div  class="main-content">
+            <div class="sobre-content">
+                <div class="sobre-content-esquerda">
+                    <h2>SOBRE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi sunt hic. Similique, qui unde tempore dicta cupiditate praesentium natus cumque ex ratione at neque sit accusantium, et odio libero.</p>
+                    <h3>Fundação em 1997</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat temporibus illo aliquam assumenda quam explicabo eaque voluptate ut itaque esse fuga natus similique ad error, exercitationem unde quod. Deserunt, reprehenderit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est excepturi maxime ea eligendi illo earum dolore unde, totam, eaque ducimus a accusantium necessitatibus sapiente, recusandae iusto. Omnis rerum aut atque.</p>
+                </div>
+                <div class="sobre-content-direita">
+                    <a href="https://www.instagram.com/p/CMcLdGJhDmn/" target="_blank"><img src="/assets/img/softeam-instagram-0.jpg" alt="imagem softeam html"></a>
+                </div>
+            </div>
+            <div class="sobre-content-baixo">
+                <h3>Aqui tem mais informações</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus eaque reiciendis culpa, reprehenderit harum consequuntur aut iure, earum cumque ducimus tenetur perferendis officiis expedita quae provident odit nam nisi!</p>
+            </div>
+            
         </div>
     </section>
 
     <section id="downloads" class="white-bg section">
-        <div class="main-content">
-            <h1>Lorem</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, excepturi quasi facilis, optio deserunt
-                omnis earum adipisci molestias natus doloribus aliquam delectus? Eligendi sit, odio accusantium sed at
-                voluptate vitae.</p>
+        <div  class="main-content">
+            <div class="downloads-content">
+                <div class="downloads-content-img" style="display: flex; justify-content: center;">
+                    <img src="/assets/img/download.svg" alt="" style="height: 20rem;width: 20rem;">
+                </div>
+                <div class="downloads-buttons" style="display: flex; justify-content:center; gap: var(--gap);">
+                    <a href="#download-programa1"><input type="button" value="Programa 1" id="button"></a>
+                    <a href="#download-programa2"><input type="button" value="Programa 2" id="button"></a>
+                    <a href="#download-programa3"><input type="button" value="Programa 3" id="button"></a>
+                    
+                </div>
+            </div>
+            
         </div>
     </section>
+
 </body>
 
 </html>

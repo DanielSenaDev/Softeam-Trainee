@@ -1,9 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
+/* SEÇÃO PAGE TOP*/
+.page-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*--------------*/
+
+/* SEÇÃO SOBRE*/
+.sobre-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: var(--gap);
 }
 
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
+.sobre-content-esquerda {
+    display: grid;
+    gap: var(--gap);
+}
+
+.sobre-content-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.sobre-content-direita a img{
+    height: auto ; 
+    width: 30vw;
+    max-width: 100%;
+    min-height: 25rem;
+    min-width: 25rem;
+}
+
+.sobre-content-baixo{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+/*--------------*/
+
+/* SEÇÃO DOWNLOADS */
+
+.downloads-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*--------------*/

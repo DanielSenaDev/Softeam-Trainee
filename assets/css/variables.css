@@ -2,5 +2,11 @@
     --white-color: #FFFFFF;
     --color-1: #800280;
     --color-2: #42048C;
-    --gap: 3rem;
+    --color-3: #3882F6;
+    --color-4: #003180EE;
+    --background-gradient: linear-gradient(to right, var(--color-1) 0%, var(--color-2) 100%);
+    --gap: 2rem;
+    --size-logo: 5rem;
+    --menu-padding: 1rem;
+    --menu-spacing: calc(var(--size-logo) + var(--menu-padding)*2 + 0.5rem);
 }
