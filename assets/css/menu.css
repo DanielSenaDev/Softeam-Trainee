@@ -31,6 +31,7 @@
     font-weight: bolder;
     padding: 1rem;
     background: rgba(255, 255, 255, 1);
+    border-radius: 50% inherit;
 }
 
 .menu ul{
@@ -57,7 +58,7 @@
     width: 0;
     height: 0.2rem;
     background: var(--white-color);
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .menu ul li a:hover::after{
@@ -67,9 +68,10 @@
 }
 
 .menu ul li a:hover{
-    transition: all 500ms ease-in-out;
+    transition: all 100ms ease-in-out;
     color: var(--color-2);
     background-image: linear-gradient(white 90%,gray);
+    font-size: larger;
 }
 
 .menu-spacing{
