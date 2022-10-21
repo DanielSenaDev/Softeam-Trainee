@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: thick double var(--color-1);    
+    border-bottom: thick double white;    
     text-transform: uppercase;
 }
 
@@ -63,6 +63,13 @@
 .menu ul li a:hover::after{
     width: 100%;
     left: 0%;
+    
+}
+
+.menu ul li a:hover{
+    transition: all 500ms ease-in-out;
+    color: var(--color-2);
+    background-image: linear-gradient(white 90%,gray);
 }
 
 .menu-spacing{

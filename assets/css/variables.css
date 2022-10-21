@@ -4,6 +4,7 @@
     --color-2: #42048C;
     --color-3: #3882F6;
     --color-4: #003180EE;
+    --color-5: #191e49;
     --background-gradient: linear-gradient(to right, var(--color-1) 0%, var(--color-2) 100%);
     --gap: 2rem;
     --size-logo: 5rem;

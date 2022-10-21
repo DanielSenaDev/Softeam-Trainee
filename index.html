@@ -13,24 +13,26 @@
     <link rel="stylesheet" href="assets/css/classes.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@900&family=Fasthand&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+    <input type="checkbox" class="close-menu" id="close-menu" role="button" aria-label="Close menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
     <aside class="menu main-bg">
-        <div  class="main-content menu-content">
-            <span>
+        <div class="main-content menu-content">
+            <span onclick="getElementById('close-menu').checked = false;">
                 <a href="#page-top"><img src="/assets/img/softeam.png" alt=""></a>
             </span>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#page-top">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#downloads">Downloads</a></li>
@@ -43,13 +45,13 @@
     
     <!-- <div class="menu-spacing"></div> -->
     
-    <section id="page-top" class="page-top section">
+    <header id="page-top" class="page-top section">
         <div class="main-content">
             <h1><img src="assets/img/softeam.png" alt="logo SOFTEAM"></h1>
             <h3>Empresa Junior de Computação</h3>
             <h4>UFS</h4>
         </div>
-    </section>
+    </header>
 
     <section id="sobre" class="main-bg section">
         <div  class="main-content">
@@ -62,7 +64,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est excepturi maxime ea eligendi illo earum dolore unde, totam, eaque ducimus a accusantium necessitatibus sapiente, recusandae iusto. Omnis rerum aut atque.</p>
                 </div>
                 <div class="sobre-content-direita">
-                    <a href="https://www.instagram.com/p/CMcLdGJhDmn/" target="_blank"><img src="/assets/img/softeam-instagram-0.jpg" alt="imagem softeam html"></a>
+                    <a href="https://www.instagram.com/p/CMcLdGJhDmn/" target="_blank"><img id="imagem1" src="/assets/img/softeam-instagram-0.jpg" alt="imagem softeam html"></a>
                 </div>
             </div>
             <div class="sobre-content-baixo">
@@ -76,19 +78,39 @@
     <section id="downloads" class="white-bg section">
         <div  class="main-content">
             <div class="downloads-content">
-                <div class="downloads-content-img" style="display: flex; justify-content: center;">
-                    <img src="/assets/img/download.svg" alt="" style="height: 20rem;width: 20rem;">
+                <div class="downloads-content-img">
+                    <img src="/assets/img/download.svg" alt="imagem com simbolo de seta para baixo, simbolizando download">
+                    <h2>DOWNLOADS</h2>
+                    <h3>Baixe aqui nossos softwares</h3>
+                    <h6>Download Grátis</h6>
                 </div>
-                <div class="downloads-buttons" style="display: flex; justify-content:center; gap: var(--gap);">
-                    <a href="#download-programa1"><input type="button" value="Programa 1" id="button"></a>
-                    <a href="#download-programa2"><input type="button" value="Programa 2" id="button"></a>
-                    <a href="#download-programa3"><input type="button" value="Programa 3" id="button"></a>
-                    
+                <div class="downloads-buttons">
+                    <a href="#download-programa1"><input type="button" class="button" value="Programa 1 ver 2.0"></a>
+                    <a href="#download-programa2"><input type="button" class="button" value="Programa 2 ver 8.0"></a>
+                    <a href="#download-programa3"><input type="button" class="button" value="Programa 3 ver 1.0"></a>
                 </div>
-            </div>
-            
+                <div>
+                    <h4>Todas versões atualizadas.</h4>
+                </div>
+            </div>            
         </div>
     </section>
+
+    <section id="midia" class="main-bg section">
+        <div  class="main-content">
+            <div class="midia-content">
+                <h2>Midia</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer class="white-bg">
+        <div class="footer-content">
+            <p>Feito por <a href="http://github.com/DanielSenaDev" target="_blank">Daniel Sena</a>.</p>
+        </div>
+    </footer>
+
+    <a class="back-to-top" href="#page-top"></a>
 
 </body>
 

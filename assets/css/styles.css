@@ -1,9 +1,15 @@
+.close-menu{
+    display: none;
+}
+
 /* SEÇÃO PAGE TOP*/
 .page-top{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(var(--color-4) 5%, var(--white-color) 80%, var(--color-4));
 }
 /*--------------*/
 
@@ -23,15 +29,12 @@
 }
 
 .sobre-content-direita {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap);
+    text-align: center;
 }
 
 .sobre-content-direita a img{
     height: auto ; 
-    width: 30vw;
+    width: 50vw;
     max-width: 100%;
     min-height: 25rem;
     min-width: 25rem;
@@ -50,7 +53,75 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
+.downloads-content-img{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+.downloads-content-img img{
+    height: 20rem;
+    width: 20rem;
+}
+/*--------------*/
 
+/* SEÇÃO MIDIA */
+
+.midia-content{
+    display: grid;
+}
+
+/*--------------*/
+
+/* SEÇÃO FOOTER */
+.footer-content{
+    background: black;
+    color: var(--white-color);
+    font-family: 'Fasthand', cursive;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content a{
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+.footer-content a:hover{
+    transition: all 500ms ease-in-out;
+    color: var(--color-2);
+    cursor: pointer;
+}
+
+/*--------------*/
+
+/* Botão Back to Top */
+.back-to-top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #000000DD;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    text-align: center;
+    transform: rotate(0deg);
+    z-index: 1;
+    color: var(--white-color);
+}
+
+.back-to-top::after{
+    content: '⇧';
+}
 /*--------------*/
